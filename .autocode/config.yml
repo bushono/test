@@ -5,3 +5,16 @@ author:
   email: goran.angelkovski@gmail.com
   url: angelkovski.com
 copyright: 2015 Goran A.
+url: www.test.net
+imports:
+  crystal/docker: ~0.2.0
+outputs:
+  - generator: docker.DockerfileGenerator
+    spec:
+      containers:
+        - name: web
+          from: ubuntu
+          maintainer: $author
+          run:
+            - apt-get install php5 php5-mysql
+          expose: 80
