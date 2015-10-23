@@ -10,6 +10,8 @@ imports:
   crystal/docker: ~0.2.0
   crystal/composer: ~0.2.0
   crystal/php: ~0.3.2
+  crystal/authors: ~0.3.3
+  crystal/angular: ~0.3.0
 outputs:
   - generator: docker.DockerfileGenerator
     spec:
